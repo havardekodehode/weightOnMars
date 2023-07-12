@@ -1,0 +1,71 @@
+:root {
+    --main-bg-color: #895024;
+    --main-font:'Chakra Petch', sans-serif;
+
+  }
+html, body{
+    margin: 0;
+}
+html {
+    height: 100%;
+  }
+
+body {
+    min-height: 100%;
+  }
+
+header{
+    background-color: var(--main-bg-color);
+    background-image: url("images/marsHeaderMobile.jpg");
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+    font-family: var(--main-font);
+    display: flex;
+    justify-content: flex-end;
+    /* padding: 10% 7%; */
+    color: #FFFFFF;
+    height: 100vh;
+    
+}
+
+h2{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: larger;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: var(--main-font);
+    padding-top: 10%;
+}
+
+main input{
+    background-color: var(--main-bg-color);
+    border-style: none;
+    border-bottom: white solid 1px;
+    margin-bottom: 30px;
+}
+
+#planetImage{
+    height: 60px;
+}
+
+.planets{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.planet{
+    display: flex;
+    gap: 20px;
+}
+
