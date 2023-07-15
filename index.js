@@ -12,7 +12,9 @@ const solarSystem = [{planetName:"Mercury", relativeGravity:0.38},
                     ];
 
 inputEl.onchange = (event) => {
+    planetsEl.innerHTML = ""
     solarSystem.forEach(planet => {
+        // createElemet
         planetsEl.innerHTML+= ` 
         <div class="planet">
             <img id="planetImage" src="images/${planet.planetName}.png" alt="image of mercury">

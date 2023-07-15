@@ -5,6 +5,7 @@
   }
 html, body{
     margin: 0;
+    min-width: 344px;
 }
 html {
     height: 100%;
@@ -12,21 +13,61 @@ html {
 
 body {
     min-height: 100%;
+    background-color: var(--main-bg-color);
   }
 
 header{
     background-color: var(--main-bg-color);
     background-image: url("images/marsHeaderMobile.jpg");
     background-repeat: no-repeat;
-    background-size: 70% 100%;
+    background-size: 100%;
     font-family: var(--main-font);
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: flex-end; */
     /* padding: 10% 7%; */
     color: #FFFFFF;
     height: 100vh;
     
 }
+
+header div{
+    /* background-color: rgb(255, 177, 60); */
+    margin-left: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: small;
+
+}
+
+.arrow{
+    background-image: url("images/Arrow.png");
+    position: relative;
+    bottom: 6%;
+    left: 50%;
+    margin-left:-20px;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    width: 47px;
+}
+
+.bounce{
+    animation: bounce 2s infinite;
+
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
 
 h2{
     writing-mode: vertical-lr;
@@ -40,32 +81,104 @@ main{
     align-items: center;
     height: 100vh;
     background-color: var(--main-bg-color);
-    color: white;
+    color: #f5f5f5;
     font-family: var(--main-font);
-    padding-top: 10%;
+    /* padding-top: 10%; */
 }
 
 main input{
     background-color: var(--main-bg-color);
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: large;
     border-style: none;
-    border-bottom: white solid 1px;
+    border: none;
+    border-bottom: #f5f5f5 solid 1px;
     margin-bottom: 30px;
+    color: #f5f5f5;
+}
+
+main input:focus{
+    outline: none;
 }
 
 #planetImage{
+    /* width: auto; */
     height: 60px;
 }
 
 .planets{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto ;
     flex-direction: column;
-    justify-content: space-between;
     gap: 20px;
 
 }
 
 .planet{
     display: flex;
+    /* justify-content: center; */
+    align-items: center;
     gap: 20px;
+    /* height: 5%; */
+}
+
+@media screen and (max-height: 690px) {
+    #planetImage{
+    height: 30px;
+    }
+    h3{
+        font-size: small;
+    }
+    .planets{
+        gap:18px;
+    }
+    .main input{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    header{
+        background-image: url("images/marsHeaderTablet.png");
+        background-size: 132%;
+        background-position: center;
+        height: 100vh;
+    }
+    header div{
+        text-align: center;
+    }
+    .arrow{
+        bottom:12%;
+        left: 66%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    header{
+        background-image: url("images/marsHeader.jpg");
+        height: 30vh;
+        background-size: 100%;
+        background-position: left;
+    }
+    h2{
+        writing-mode: horizontal-tb;
+        text-orientation: upright;
+        font-size: larger;
+        margin-right: 120px;
+    }
+    main{
+        height: 70vh;
+    }
+    .arrow{
+        visibility: hidden;
+    }
+    .planets{
+        grid-template-columns: auto auto auto;
+        gap: 60px;
+        column-gap: 160px;
+    }
+
 }
 
