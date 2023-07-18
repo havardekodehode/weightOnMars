@@ -1,5 +1,7 @@
 const inputEl = document.getElementById("input")
 const planetsEl = document.getElementById("planets")
+const noButton = document.getElementById("no");
+const enButton = document.getElementById("en");
 
 const solarSystem = [{planetName:"Mercury", relativeGravity:0.38}, 
                      {planetName:"Venus", relativeGravity:0.91}, 
@@ -23,3 +25,7 @@ inputEl.onchange = (event) => {
         `
     });
 }
+
+noButton.addEventListener("click", function(){
+    
+})

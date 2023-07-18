@@ -9,12 +9,35 @@ html, body{
 }
 html {
     height: 100%;
-  }
+}
 
 body {
     min-height: 100%;
     background-color: var(--main-bg-color);
-  }
+}
+
+.language{
+    position: absolute;
+    display: flex;
+    right: 1%;
+    top: 1%;
+    height: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.language button{
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+}
+
+.language img{
+    width: 20px;
+    height: 15px;
+}
+  
 
 header{
     background-color: var(--main-bg-color);
