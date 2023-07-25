@@ -152,7 +152,6 @@ main input:focus{
 @media screen and (max-height: 690px) {
     body{
         /* max-width: 100svw; */
-        min-height: 100svh;
     }
     #planetImage{
     height: 30px;
@@ -165,6 +164,13 @@ main input:focus{
     }
     .main input{
         margin-bottom: 10px;
+    }
+    header{
+        min-height: 100svh;
+    }
+    main{
+        min-height: 100svh;
+
     }
 }
 
