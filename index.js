@@ -7,7 +7,7 @@ function language(){
     
 }
 
-let solarSystem = document.getElementById('noHeroText').hidden = true ?
+let solarSystem = document.getElementById('noHeroText').hidden === true ?
                     [{planetName:"Mercury", relativeGravity:0.38}, 
                      {planetName:"Venus", relativeGravity:0.91}, 
                      {planetName:"Earth", relativeGravity:1}, 
@@ -27,7 +27,7 @@ let solarSystem = document.getElementById('noHeroText').hidden = true ?
                     {planetName:"Neptun", relativeGravity:0.38}
                    ];
 
-inputEl.onchange = (event) => {
+inputEl.oninput = (event) => {
     planetsEl.innerHTML = ""
     solarSystem.forEach(planet => {
         // createElemet
@@ -57,3 +57,22 @@ noButton.addEventListener("click", function(){
         document.getElementById('noMainText').hidden = false
     }
 })
+
+// window.scroll.
+
+// if(window.innerWidth < 1200 ){
+//     onmousedown = (event) => {
+//         console.log("Element scroll event fired!");
+//         const element = document.querySelector("main");
+//         element.scrollIntoView({
+//           block: "start",
+//           behavior: "smooth",
+//           inline: "start",
+//         });
+//         // setTimeout(() => {
+//         //   }, 1000);
+//     }
+
+        
+     
+// }
