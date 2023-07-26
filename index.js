@@ -33,7 +33,7 @@ inputEl.oninput = (event) => {
         // createElemet
         planetsEl.innerHTML+= ` 
         <div class="planet">
-            <img id="planetImage" src="images/${planet.planetName}.png" alt="image of mercury">
+            <img id="planetImage" src="images/${planet.planetName}.webp" alt="image of mercury">
             <h3>${planet.planetName}: ${(Number(inputEl.value) * planet.relativeGravity).toFixed(2)}Kg </h3>
         </div>
         `
@@ -58,21 +58,24 @@ noButton.addEventListener("click", function(){
     }
 })
 
-// window.scroll.
+// let hasScrolled = false
+// let isOnHeader = true
 
-// if(window.innerWidth < 1200 ){
-//     onmousedown = (event) => {
-//         console.log("Element scroll event fired!");
-//         const element = document.querySelector("main");
-//         element.scrollIntoView({
-//           block: "start",
-//           behavior: "smooth",
-//           inline: "start",
-//         });
-//         // setTimeout(() => {
-//         //   }, 1000);
-//     }
-
-        
-     
+// if(window.innerWidth < 1200 && isOnHeader){
+//     isOnHeader = false
+//     while (!hasScrolled) {
+//         onscroll = (event) => {
+//             hasScrolled = true;
+//             console.log("Element scroll event fired!");
+//             const element = document.querySelector("main");
+//             element.scrollIntoView({
+//               block: "start",
+//               behavior: "smooth",
+//               inline: "start",
+//             });
+           
+//             // setTimeout(() => {
+//             //   }, 1000);
+//         }
+//     } 
 // }
