@@ -26,7 +26,7 @@ body {
     padding: 0px;
 }
 
-.language button{
+.language fieldset{
     border: none;
     cursor: pointer;
     appearance: none;
@@ -148,6 +148,23 @@ main input:focus{
     gap: 20px;
     /* height: 5%; */
 }
+
+.eng{
+
+}
+
+.nor{
+    visibility: hidden;
+}
+
+/* @keyframes spin {
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+} */
 
 @media screen and (max-height: 690px) {
     body{
