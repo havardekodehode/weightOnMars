@@ -33,7 +33,7 @@ inputEl.oninput = (event) => {
         // createElemet
         planetsEl.innerHTML+= ` 
         <div class="planet">
-            <img id="planetImage" src="images/${planet.planetName}.webp" alt="image of mercury">
+            <img id="planetImage" src="images/${planet.planetName}.webp" alt="Image of ${planet.planetName}">
             <h3>${planet.planetName}: ${(Number(inputEl.value) * planet.relativeGravity).toFixed(2)}Kg </h3>
         </div>
         `
