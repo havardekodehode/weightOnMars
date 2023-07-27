@@ -128,6 +128,10 @@ main input:focus{
     outline: none;
 }
 
+input{
+    padding-top: 50pxs;
+}
+
 #planetImage{
     /* width: auto; */
     height: 60px;
@@ -150,10 +154,12 @@ main input:focus{
 }
 
 .eng{
+    position: absolute;
 
 }
 
 .nor{
+    position: absolute;
     visibility: hidden;
 }
 

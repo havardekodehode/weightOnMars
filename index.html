@@ -13,20 +13,25 @@
 <body>
     <header>
         <div class="language">
-            <button id="en" type="button"><img src="images/british flag.png" alt="british flag"></button>
-            <button id="no" type="button"><img src="images/norwayFlag.png" alt="norwegian flag"></button>
+            <form>
+                <fieldset>
+                    <legend></legend>
+                    <input id="en" value="en" type="radio" name="language" checked><img src="images/british flag.png" alt="british flag" ></input>
+                    <input id="no" value="no" type="radio" name="language"><img src="images/norwayFlag.png" alt="norwegian flag"></input>
+                </fieldset>
+            </form>
         </div>
         
         <div>
-            <h2 id="enHeroText" lang="en">WHAT WOULD I WHEIGH ON MARS?</h2>
-            <h2 hidden id="noHeroText" lang="no">HVA VILLE JEG VEID PÅ MARS?</h2>
+            <h2 class="eng">WHAT WOULD I WHEIGH ON MARS?</h2>
+            <h2 class="nor">HVA VILLE JEG VEID PÅ MARS?</h2>
         </div>
         <div class="arrow bounce"></div>
     </header>
     <main>
-        <h3 id="enMainText" lang="en">Your weight</h3>
-        <h3 hidden id="noMainText" lang="no">Din vekt</h3>
-        <label for="weight"><input id="input" type="text"></label>
+        <h3 class="eng">Your weight</h3>
+        <h3 class="nor">Din vekt</h3>
+        <label for="input"><input id="input" type="text"></label>
         <div id="planets" class="planets"></div>
     </main>
 </body>
