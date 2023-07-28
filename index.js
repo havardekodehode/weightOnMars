@@ -22,7 +22,6 @@ let solarSystem =
                      {planetName:"Neptune", planetNameNor:"Neptun", relativeGravity:0.38}
                     ]
 
-try {
     inputEl.oninput = (event) => {
         planetsEl.innerHTML = ""
         for(let planet of solarSystem){
@@ -60,9 +59,7 @@ try {
     
         };
     }
-} catch (error) {
-    console.log("No input");
-}
+
 
 
 // const css = document.styleSheets[0];
