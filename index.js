@@ -59,6 +59,9 @@ try {
     
     
         };
+        if(inputEl.value === ""){
+            planetsEl.innerHTML = ""
+        }
     }
 } catch (error) {
     console.log("no input yet");
