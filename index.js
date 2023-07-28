@@ -22,43 +22,48 @@ let solarSystem =
                      {planetName:"Neptune", planetNameNor:"Neptun", relativeGravity:0.38}
                     ]
 
-inputEl.oninput = (event) => {
-    planetsEl.innerHTML = ""
-    solarSystem.forEach(planet => {
-        const div = document.createElement("div")
-        div.classList="planet"
-        const img = document.createElement("img")
-        img.id="planetImage"
-        img.src=`images/${planet.planetName}BR.webp`
-        
-
-        const h3 = document.createElement("h3")
-        const h3Nor = document.createElement("h3")
-        h3.append(`${planet.planetName}: ${(Number(inputEl.value) * planet.relativeGravity).toFixed(2)}Kg`)
-        h3.classList.add("eng")
-        h3.style = "margin-top: 0px"
-        // h3Nor.style = "margin-bottom: 4px"
-
-        h3Nor.append(`${planet.planetNameNor}: ${(Number(inputEl.value) * planet.relativeGravity).toFixed(2)}Kg`)
-        h3Nor.classList.add("nor")
-        h3Nor.style = "margin-top: 0px"
-        // h3Nor.style = "margin-bottom: 4px"
-
-        div.append(img, h3, h3Nor)
-
-        planetsEl.append(div)
-        textEng = document.querySelectorAll(".eng")
-        textNor = document.querySelectorAll(".nor")
-        // planetsEl.innerHTML+= ` 
-        // <div class="planet">
-        //     <img id="planetImage" src="images/${planet.planetName}.webp" alt="Image of ${planet.planetName}" style="animation:fadeIn 5s, spin 30s cubic-bezier(0, 0, 1, 1) infinite ">
-        //     <h3>${enRadio.checked ? planet.planetName:planet.planetNameNor}: ${(Number(inputEl.value) * planet.relativeGravity).toFixed(2)}Kg </h3>
-        // </div>
-        // `
-
-
-    });
+try {
+    inputEl.oninput = (event) => {
+        planetsEl.innerHTML = ""
+        for(let planet of solarSystem){
+            const div = document.createElement("div")
+            div.classList="planet"
+            const img = document.createElement("img")
+            img.id="planetImage"
+            img.src=`images/${planet.planetName}BR.webp`
+            
+    
+            const h3 = document.createElement("h3")
+            const h3Nor = document.createElement("h3")
+            h3.append(`${planet.planetName}: ${(Number(inputEl.value) * planet.relativeGravity).toFixed(2)}Kg`)
+            h3.classList.add("eng")
+            h3.style = "margin-top: 0px"
+            // h3Nor.style = "margin-bottom: 4px"
+    
+            h3Nor.append(`${planet.planetNameNor}: ${(Number(inputEl.value) * planet.relativeGravity).toFixed(2)}Kg`)
+            h3Nor.classList.add("nor")
+            h3Nor.style = "margin-top: 0px"
+            // h3Nor.style = "margin-bottom: 4px"
+    
+            div.append(img, h3, h3Nor)
+    
+            planetsEl.append(div)
+            textEng = document.querySelectorAll(".eng")
+            textNor = document.querySelectorAll(".nor")
+            // planetsEl.innerHTML+= ` 
+            // <div class="planet">
+            //     <img id="planetImage" src="images/${planet.planetName}.webp" alt="Image of ${planet.planetName}" style="animation:fadeIn 5s, spin 30s cubic-bezier(0, 0, 1, 1) infinite ">
+            //     <h3>${enRadio.checked ? planet.planetName:planet.planetNameNor}: ${(Number(inputEl.value) * planet.relativeGravity).toFixed(2)}Kg </h3>
+            // </div>
+            // `
+    
+    
+        };
+    }
+} catch (error) {
+    console.log("No input");
 }
+
 
 // const css = document.styleSheets[0];
 
