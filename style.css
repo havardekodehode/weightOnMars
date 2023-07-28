@@ -163,7 +163,7 @@ main{
     /* padding-top: 10%; */
 }
 
-main label input{
+main input{
     background-color: var(--main-bg-color);
     text-align: center;
     font-family: var(--main-font);
@@ -175,11 +175,11 @@ main label input{
     color: #f5f5f5;
 }
 
-main label input:focus{
+main input:focus{
     outline: none;
 }
 
-label input{
+input{
     padding-top: 50pxs;
 }
 

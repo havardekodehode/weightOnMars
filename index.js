@@ -22,8 +22,8 @@ let solarSystem =
                      {planetName:"Neptune", planetNameNor:"Neptun", relativeGravity:0.38}
                     ]
 
+try {
     inputEl.oninput = (event) => {
-        console.log("aaa");
         planetsEl.innerHTML = ""
         for(let planet of solarSystem){
             const div = document.createElement("div")
@@ -60,6 +60,10 @@ let solarSystem =
     
         };
     }
+} catch (error) {
+    console.log("no input yet");
+}
+   
 
 
 
