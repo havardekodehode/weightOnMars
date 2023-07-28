@@ -26,7 +26,7 @@ inputEl.oninput = (event) => {
     planetsEl.innerHTML = ""
     solarSystem.forEach(planet => {
         const div = document.createElement("div")
-
+        div.classList="planet"
         const img = document.createElement("img")
         img.id="planetImage"
         img.src=`images/${planet.planetName}.webp`
@@ -70,17 +70,17 @@ for(let i = 0; i < radios.length; i++){
         console.log(val);
         if(val === "en"){
             for(let item of textNor){
-                item.style = "visibility: hidden"
+                item.style = "display: none"
             } 
             for(let item of textEng){
-                item.style = "visibility: visible"
+                item.style = "display: flex"
             }
         }else if(val === "no"){
             for(let item of textEng){
-                item.style = "visibility: hidden"
+                item.style = "display: none"
             }
             for(let item of textNor){
-                item.style = "visibility: visible"
+                item.style = "display: flex"
             } 
         }
     })

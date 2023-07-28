@@ -154,13 +154,13 @@ input{
 }
 
 .eng{
-    position: absolute;
+    /* position: absolute; */
 
 }
 
 .nor{
-    position: absolute;
-    visibility: hidden;
+    /* position: absolute; */
+    display: none;
 }
 
 /* @keyframes spin {
