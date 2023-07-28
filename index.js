@@ -29,7 +29,7 @@ inputEl.oninput = (event) => {
         div.classList="planet"
         const img = document.createElement("img")
         img.id="planetImage"
-        img.src=`images/${planet.planetName}BR.png`
+        img.src=`images/${planet.planetName}BR.webp`
         
 
         const h3 = document.createElement("h3")
