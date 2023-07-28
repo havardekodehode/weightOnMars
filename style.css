@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Chakra Petch";
     src: url(ChakraPetch-Regular.ttf);
+    font-display: swap;
 }
 
 :root {
@@ -53,7 +54,7 @@ body {
 
 .language img{
     width: 20px;
-   height: auto;
+   height: 15px;
 }
   
 
@@ -80,7 +81,7 @@ header{
     position: relative;
     left: -20%;
     height: 100%;
-    width: auto%;
+    width: auto;
 }
 
 .spin{
@@ -112,7 +113,7 @@ header div{
 
 header div h2{
     padding-right: 10%;
-    width: 260px;
+    /* width: 260px; */
 }
 
 .arrow{
