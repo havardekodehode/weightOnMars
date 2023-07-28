@@ -1,4 +1,4 @@
-const inputEl = document.getElementById("input")
+const inputEl = document.getElementById("inputWeight")
 const planetsEl = document.getElementById("planets")
 const noRadio = document.getElementById("no");
 const enRadio = document.getElementById("en");
@@ -23,6 +23,7 @@ let solarSystem =
                     ]
 
     inputEl.oninput = (event) => {
+        console.log("aaa");
         planetsEl.innerHTML = ""
         for(let planet of solarSystem){
             const div = document.createElement("div")
