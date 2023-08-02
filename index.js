@@ -107,19 +107,19 @@ for(let i = 0; i < radios.length; i++){
 // }
 
 
-if(window.innerWidth < 1200){
+// if(window.innerWidth < 1200){
     
-        window.addEventListener("click", function(){
-                const element = document.querySelector("main");
-                element.scrollIntoView({
-                  block: "start",
-                  behavior: "smooth",
-                  inline: "start",
-                }
-                )
+//         window.addEventListener("click", function(){
+//                 const element = document.querySelector("main");
+//                 element.scrollIntoView({
+//                   block: "start",
+//                   behavior: "smooth",
+//                   inline: "start",
+//                 }
+//                 )
                
-                // setTimeout(() => {
-                //   }, 1000);
+//                 // setTimeout(() => {
+//                 //   }, 1000);
             
-        }    )
-}
+//         }    )
+// }
