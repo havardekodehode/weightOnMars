@@ -186,6 +186,17 @@
         font-size: 22px;
     }
 
+    main{
+        height: 70vh;
+    }
+
+    .planets{
+        grid-template-columns: auto auto auto;
+        column-gap: 148px;
+        row-gap: 60px;
+    }
+
+
   }
 
 
